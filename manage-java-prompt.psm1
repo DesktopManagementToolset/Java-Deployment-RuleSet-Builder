@@ -237,7 +237,7 @@ $selection
 function requestCertificate( )
 {
 $defaultPath = [Environment]::GetFolderPath('MyDocuments') + "\deploymentRulesetCert.pfx"
-$selection =  Read-Host "Enter the full path of the encrypted certificate: $defaultPath"
+$selection =  Read-Host "Enter the full path of the certificate: $defaultPath"
 if ($selection) 
 {
 	if(!(Test-Path $selection))
