@@ -183,7 +183,7 @@ $selection
 
 function requestDefaultAction( )
 {
-$selection =  Read-Host 'Enter Default action: Block'
+$selection =  Read-Host 'Enter Default action ( Block )'
 if (($selection.ToLower().compareTo("block") -eq 0) -or ($selection.ToLower().compareTo("default") -eq 0)) 
 {
 	$selection
@@ -216,7 +216,7 @@ $selection
 function requestWhitelist( )
 {
 $defaultPath = [Environment]::GetFolderPath('MyDocuments') + "\whitelist.txt"
-$selection =  Read-Host "Enter the full path of the Whitelist: $defaultPath"
+$selection =  Read-Host "Enter the full path of the Whitelist ( $defaultPath )"
 if ($selection) 
 {
 	if(!(Test-Path $selection))
@@ -242,7 +242,7 @@ $selection
 function requestCertificate( )
 {
 $defaultPath = [Environment]::GetFolderPath('MyDocuments') + "\deploymentRulesetCert.pfx"
-$selection =  Read-Host "Enter the full path of the certificate: $defaultPath"
+$selection =  Read-Host "Enter the full path of the certificate ( $defaultPath )"
 if ($selection) 
 {
 	if(!(Test-Path $selection))
@@ -271,7 +271,6 @@ function createDRS()
 Echo "******************************************************************************************"
 Echo "*                                                                                        *"
 Echo "* Please answer the following prompts (press Enter to accept default values shown):      *"
-Echo "*     The Temp directory should contain the Certificate and Whilelist                    *"
 echo "*                                                                                        *"
 echo "******************************************************************************************" 
  
