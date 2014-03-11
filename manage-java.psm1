@@ -7,7 +7,7 @@
     File Name : manage-java.psm1
     Version : 0.1.1
     Author : Tripp Watson and Erick Brashears
-    Requires : Powershell v. 2 and Java JDK 7
+    Requires : Powershell v. 3 and Java JDK 7
 #>
 
 Set-StrictMode -Version Latest
